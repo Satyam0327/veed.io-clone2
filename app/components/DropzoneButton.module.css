@@ -1,0 +1,58 @@
+.wrapper {
+  position: relative;
+  margin-left: 18rem;
+  margin-bottom: 8px;
+  color: white;
+  width: 60rem;
+  border-radius: 8px;
+  align-items: center;
+  margin-top: 15rem;
+}
+
+.dropzone {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.dropzone:hover {
+  background-color: #eee;
+  border-color: #111;
+}
+
+.dropzone:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.control {
+  position: absolute;
+  width: 256px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  background-color: #1E40AF; /* bg-blue-500 */
+  color: white;
+}
+
+.control:hover {
+  background-color: #1C3AA9; /* bg-blue-600 */
+}

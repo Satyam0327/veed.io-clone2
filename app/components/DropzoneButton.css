@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Optional: for better visibility */
+  }
+  
+  .drop-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px; /* Adjust width as necessary */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #555;
+    background-color: black; /* Set background color to black */
+    color: #fff; /* Set text color to white for contrast */
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+  }
+  
+  .drop-container:hover {
+    background: #333; /* Darker shade on hover */
+    border-color: #fff; /* Change border color on hover */
+  }
+  
+  .drop-container:hover .drop-title {
+    color: #ddd; /* Change title color on hover */
+  }
+  
+  .drop-title {
+    color: #fff; /* Set initial title color to white */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+  }
+  
+  /* Cloud icon styling */
+  .cloud-icon {
+    font-size: 50px; /* Adjust size as necessary */
+    margin-bottom: 10px; /* Space between icon and title */
+    color: #fff; /* Set icon color to white */
+  }
+  
